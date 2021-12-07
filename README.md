@@ -16,4 +16,18 @@ vi) A Supplier that supplies a random number, a Predicate that checks whether th
 vii) square of a number. </br> 
 viii) To find area of circle using consume method of function.</br>
 
-In next example a custom employee object is created on which different conditions are applied using these interfaces like checking salary is less than 50k
+In next example a custom employee object is created on which different conditions are applied using these interfaces like checking salary is less than 50k </br>
+</br>
+</br>
+</br>
+## Executor framework 
+</br>
+Every time creating a new thread for every job may create performance and memory problems. To overcome this thread pool concept is used. </br>
+Thread pool is a pool of already created threads ready to do job. It is also known as Executor framework. </br>
+</br>
+We can create a thread pool: </br>
+ExecutorService executorService = Executions.newfixedThreadPool(3); </br>
+After creating thread pool, we can submit a runnable job by using executorService.submit(job); </br>
+</br>
+At end of whole process we can shutdown executor service by using executorService.shutdown(); </br>
+While developing application server, thread pool concept can be used.
